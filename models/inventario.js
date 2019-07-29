@@ -7,7 +7,8 @@ module.exports = (sequelize, DataTypes) => {
     usuario: DataTypes.STRING,
     idModelo: DataTypes.INTEGER,
     idLocal: DataTypes.INTEGER,
-    idUsuario: DataTypes.INTEGER
+    idUsuario: DataTypes.INTEGER,
+    mesa: DataTypes.STRING
   }, {});
   Inventario.associate = function(models) {
     // associations can be defined here
