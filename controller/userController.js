@@ -13,7 +13,7 @@ module.exports = {
   }, // Criar
 
   async get(req, res) {
-    const usuario = await models.Usuario.findByPk(req.params.email);
+    const usuario = await models.Usuario.findByPk(req.params.id);
     res.json(usuario);
   }, //Buscar
 
