@@ -4,7 +4,7 @@ module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.addColumn(
       'Inventarios', // name of Source model
-      'sala', // name of the key we're adding
+      'mesa', // name of the key we're adding
       {
         type: Sequelize.STRING,
       }
@@ -14,7 +14,7 @@ module.exports = {
   down: (queryInterface, Sequelize) => {
     return queryInterface.removeColumn(
       'Inventarios', // name of Source model
-      'idUsuario' // key we want to remove
+      'mesa' // key we want to remove
     );
   }
 };
